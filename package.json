@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-mongoose-many-to-many",
+  "version": "1.0.0",
+  "description": "NodeJs-RestApis-MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJs-RestAPIs-MongoDB"
+  ],
+  "author": "JSA",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "mongoose": "*",
+    "npm": "*"
+  }
+}
