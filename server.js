@@ -29,7 +29,7 @@ require('./app/routes/paiements.routes.js')(app);
 
 require('./app/routes/extras.routes.js')(app);
 
-
+require('./app/routes/users.routes.js')(app);
 
 require('./app/routes/init.routes.js')(app);
 

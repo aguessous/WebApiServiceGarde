@@ -12,10 +12,17 @@
   "author": "Amine & Abdellah",
   "license": "AA",
   "dependencies": {
-    "body-parser": "*",
-    "express": "*",
-    "mongoose": "*",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.10",
+    "nodemon": "*",
     "npm": "*",
-    "nodemon": "*"
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.11.0"
   }
 }
