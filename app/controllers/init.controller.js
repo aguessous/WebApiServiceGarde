@@ -7,6 +7,8 @@ const Authentification = require('../models/authentification.model.js');
 const Prestation = require('../models/prestation.model.js');
 const Parent = require('../models/parent.model.js');
 const Enfant = require('../models/enfant.model.js');
+const Paiement = require('../models/paiement.model.js');
+const Extra = require('../models/extra.model.js');
 exports.init = (req, res) => {
 	
   // Add Subject to MongoDB
@@ -96,6 +98,31 @@ var auth1 = new Authentification({
     if(err) return console.error(err.stack)
     console.log("enfant1 successfully added")
    });
+   var paiement1 = new Paiement({
+    datePaiement:"01/02/2019",
+    montantPaiement:"150",
+    enfant:enfant1._id
+   });
+   paiement1.prestations.push(prestation1._id);
+   paiement1.save(function (err){
+    if(err) return console.error(err.stack)
+    console.log("successfully added")
+   });
+
+   var extra1 = new Extra({
+    dateExta:"01/02/2019",
+    prestationExtra:"AM",
+    heureExtra:"07:50",
+   });
+ 
+   extra1.save(function (err){
+    if(err) return console.error(err.stack)
+    console.log("successfully added")
+   });
+
+
+
+   enfant1.extras.push(extra1._id);
 
 
   // Return Message

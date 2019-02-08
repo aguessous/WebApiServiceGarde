@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-mongoose-many-to-many",
+  "name": "projet-service-garde",
   "version": "1.0.0",
   "description": "NodeJs-RestApis-MongoDB",
   "main": "server.js",
@@ -9,12 +9,13 @@
   "keywords": [
     "NodeJs-RestAPIs-MongoDB"
   ],
-  "author": "JSA",
-  "license": "ISC",
+  "author": "Amine & Abdellah",
+  "license": "AA",
   "dependencies": {
     "body-parser": "*",
     "express": "*",
     "mongoose": "*",
-    "npm": "*"
+    "npm": "*",
+    "nodemon": "*"
   }
 }

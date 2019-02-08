@@ -25,8 +25,9 @@ require('./app/routes/authentifications.routes.js')(app);
 require('./app/routes/enfants.routes.js')(app);
 require('./app/routes/parents.routes.js')(app);
 require('./app/routes/tuteurs.routes.js')(app);
+require('./app/routes/paiements.routes.js')(app);
 
-
+require('./app/routes/extras.routes.js')(app);
 
 
 

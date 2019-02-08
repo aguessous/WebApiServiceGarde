@@ -8,12 +8,12 @@ module.exports = function(app) {
  app.get('/api/enfants', enfants.findAll);
 
  // Retrieve a single  by Id
- app.get('/api/enfants/:authentificationId', enfants.findOne);
+ app.get('/api/enfants/:enfantId', enfants.findOne);
 
  // Update  with Id
- app.put('/api/enfants/:authentificationId', enfants.update);
+ app.put('/api/enfants/:enfantId', enfants.update);
 
  // Delete  with Id
- app.delete('/api/enfants/:authentificationId', enfants.delete);
+ app.delete('/api/enfants/:enfantId', enfants.delete);
 
 }

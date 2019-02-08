@@ -41,7 +41,7 @@ exports.findAll = (req, res) => {
 // FIND one
 exports.findOne = (req, res) => {
     var id = req.params.enfantId;
-    Enfnat.findById(id)
+    Enfant.findById(id)
     .then(enfant => {
         if(!enfant) {
             return res.status(404).send({
@@ -65,7 +65,7 @@ exports.findOne = (req, res) => {
 exports.update = (req, res) => {
     // Find and update it
     var id = req.params.enfantId;
-    Enfnat.findByIdAndUpdate(id, {
+    Enfant.findByIdAndUpdate(id, {
         nomEnfant:req.body.nomEnfant,
         prenomEnfant:req.body.prenomEnfant,
         dateNaissanceEnfant:req.body.dateNaissanceEnfant,
